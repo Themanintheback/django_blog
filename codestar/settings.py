@@ -11,7 +11,7 @@ import os
 from pathlib import Path
 
 import dj_database_url
-if os.path.isfile("env.py"):
+if os.path.isfile('env.py'):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
